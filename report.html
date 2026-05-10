@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameShield JA | Report an Incident</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Game<span>Shield</span>&thinsp;<em>JA</em></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html" class="active">Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Incident Reporting</p>
+        <h1>Report a Cyber Incident</h1>
+        <p>Encountered a scam, phishing attempt, account breach, or suspicious activity while gaming online in Jamaica? Use this form to document and report it.</p>
+      </div>
+
+      <!-- WHY REPORT CALLOUT -->
+      <div class="report-why">
+        <div class="why-item">
+          <span class="why-icon">&#128203;</span>
+          <div>
+            <strong>Help others stay safe</strong>
+            <p>Your report helps identify patterns and informs awareness efforts for the wider Jamaican gaming community.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="why-icon">&#128100;</span>
+          <div>
+            <strong>Your identity is protected</strong>
+            <p>Submissions are handled confidentially. Your information is not shared publicly.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="why-icon">&#128161;</span>
+          <div>
+            <strong>Get next steps</strong>
+            <p>After submitting, we provide tailored guidance on how to recover your account or protect yourself going forward.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="report-form" class="card report-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="threatType">Type of Incident</label>
+          <select id="threatType" name="threatType" required>
+            <option value="">Select the type of incident</option>
+            <option value="phishing">Phishing / Fake Message or Link</option>
+            <option value="account-hacking">Account Hacking / Unauthorized Access</option>
+            <option value="malware">Malware / Suspicious Download</option>
+            <option value="fake-giveaway">Fake Giveaway / Prize Scam</option>
+            <option value="unauthorized-purchase">Unauthorized In-Game Purchase</option>
+            <option value="social-engineering">Social Engineering / Impersonation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="platform">Platform Where It Happened</label>
+          <select id="platform" name="platform">
+            <option value="">Select a platform (optional)</option>
+            <option value="mobile-game">Mobile Game App</option>
+            <option value="pc-game">PC / Console Game</option>
+            <option value="betting-site">Betting / Gambling Site</option>
+            <option value="discord">Discord</option>
+            <option value="social-media">Social Media (Instagram, TikTok, Facebook)</option>
+            <option value="email">Email</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Describe What Happened</label>
+          <textarea id="description" name="description" rows="6" placeholder="What did you see, receive, or experience? Include any suspicious links, messages, or details you remember." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="evidence">Upload Evidence (optional)</label>
+          <input id="evidence" name="evidence" type="file" accept=".png,.jpg,.jpeg,.pdf,.txt" />
+          <small>Accepted: PNG, JPG, JPEG, PDF, TXT max 2MB</small>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">I confirm the information I provided is accurate to the best of my knowledge.</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Report</button>
+      </form>
+
+      <div id="report-message" class="alert hidden" aria-live="polite"></div>
+
+      <!-- AFTER-REPORT GUIDANCE -->
+      <section class="next-steps-card card" id="next-steps" style="display:none">
+        <h2>What to Do Next</h2>
+        <div class="next-steps-grid">
+          <div class="ns-step">
+            <span class="ns-num">1</span>
+            <h3>Secure your account immediately</h3>
+            <p>Change your password and enable MFA on the affected account. Do this before doing anything else.</p>
+          </div>
+          <div class="ns-step">
+            <span class="ns-num">2</span>
+            <h3>Check linked accounts</h3>
+            <p>Check your email and any other accounts that share the same password. Change those too.</p>
+          </div>
+          <div class="ns-step">
+            <span class="ns-num">3</span>
+            <h3>Report to the platform</h3>
+            <p>Use the official reporting or support feature on the affected platform. Most gaming platforms have a dedicated security or account recovery process.</p>
+          </div>
+          <div class="ns-step">
+            <span class="ns-num">4</span>
+            <h3>Alert your contacts</h3>
+            <p>If attackers used your account to contact others, let your gaming friends know so they don't fall for follow-up scams.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">Game<span>Shield</span>&thinsp;<em>JA</em></a>
+        <p>Cybersecurity awareness built for Jamaican gamers.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 GameShield JA. Report suspicious activity safely.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

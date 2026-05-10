@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameShield JA | Learn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="learn-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Game<span>Shield</span>&thinsp;<em>JA</em></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="learn.html" class="active">Learn</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-large">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/videos/learnvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-grid hero-grid-single">
+          <div class="hero-text">
+            <span class="eyebrow">Awareness Content</span>
+            <h1>Learn Safe Gaming Habits</h1>
+            <p class="hero-copy">Our research shows most Jamaican gamers learn about cyber threats through social media and friends not formal education. This page fills in the gaps with short, practical guidance you can actually use.</p>
+            <div class="button-group">
+              <a href="#topics" class="btn btn-primary">Explore Topics</a>
+              <a href="#simulation" class="btn btn-outline">Try Simulation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-curve">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,60 C240,120 480,180 720,170 C960,160 1200,110 1440,40 L1440,180 L0,180 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- TOPIC CARDS -->
+    <section class="section learn-card-section" id="topics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Awareness Content</p>
+          <h2>Learn Through Practical Topics</h2>
+          <p>Explore key cybersecurity areas through short, focused guides designed around what Jamaican gamers actually face online.</p>
+        </div>
+        <div class="learn-card-grid">
+          <article class="learn-info-card">
+            <img src="assets/images/phishing.jpg" alt="Phishing awareness" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>How to Recognize Phishing</h3>
+              <p>Fake links, prize messages, and suspicious login pages designed to steal your credentials are the #1 reported threat among Jamaican gamers.</p>
+              <a href="#phishing" class="learn-card-arrow" aria-label="Read more about phishing">&#8594;</a>
+            </div>
+          </article>
+          <article class="learn-info-card">
+            <img src="assets/images/mfa1.jpg" alt="MFA and passwords" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>Passwords and MFA</h3>
+              <p>71.6% of surveyed gamers reuse passwords. One breach can expose all your accounts. MFA can stop attackers even when they have your password.</p>
+              <a href="#password-mfa" class="learn-card-arrow" aria-label="Read more about passwords and MFA">&#8594;</a>
+            </div>
+          </article>
+          <article class="learn-info-card">
+            <img src="assets/images/learn3.jpg" alt="Safe browsing" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>Safe Browsing and Downloads</h3>
+              <p>Unofficial mods, fake installers, and suspicious links can expose you to malware and account theft. Learn to spot the red flags before you click.</p>
+              <a href="#safe-browsing" class="learn-card-arrow" aria-label="Read more about safe browsing">&#8594;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHISHING DETAIL -->
+    <section class="section action-section" id="phishing">
+      <div class="container action-grid">
+        <div class="action-text">
+          <p class="section-tag">Topic 1: Phishing</p>
+          <h2>Spot the Scam Before You Click</h2>
+          <p>Phishing is the most familiar threat among Jamaican gamers (65% of survey respondents knew it). Attackers disguise fake pages and messages as legitimate gaming platforms, prize notifications, or support requests. In gaming communities, this often comes through DMs, Discord servers, and in-game chats.</p>
+        </div>
+        <div class="action-cards">
+          <div class="small-feature-card sfc-warning">
+            <h3>&#9888; Fake urgency</h3>
+            <p>"Act now or your account gets deleted" is a pressure tactic designed to make you panic and skip verification.</p>
+          </div>
+          <div class="small-feature-card sfc-warning">
+            <h3>&#9888; Suspicious sender addresses</h3>
+            <p>Check the full domain, not just the display name. "epic-prizes-bonus.net" is not Epic Games.</p>
+          </div>
+          <div class="small-feature-card sfc-warning">
+            <h3>&#9888; Too-good-to-be-true offers</h3>
+            <p>Free V-Bucks, free skins, or rare item giveaways are almost always designed to steal your credentials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASSWORD / MFA DETAIL -->
+    <section class="section" id="password-mfa" style="background:var(--bg-deep)">
+      <div class="container action-grid">
+        <div class="action-text">
+          <p class="section-tag">Topic 2: Passwords and MFA</p>
+          <h2>One Breach Shouldn't Unlock Everything</h2>
+          <p>Our survey found <strong>71.6%</strong> of Jamaican gamers reuse passwords. When one platform gets breached, attackers try those same credentials on your email, other games, and payment accounts. Multi-factor authentication (MFA) acts as a second lock even if your password is stolen, they can't get in without the second factor.</p>
+        </div>
+        <div class="action-cards">
+          <div class="small-feature-card">
+            <h3>Use unique passwords per account</h3>
+            <p>One breach should not cascade into every account you own. A password manager makes this easy to manage.</p>
+          </div>
+          <div class="small-feature-card">
+            <h3>Turn on MFA everywhere</h3>
+            <p>Use an authenticator app, SMS code, or approval prompt. Even 50% of surveyed gamers already use this join them.</p>
+          </div>
+          <div class="small-feature-card">
+            <h3>Secure your email first</h3>
+            <p>Your email is the recovery point for all your gaming accounts. If attackers get your email, they can reset everything else.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFE BROWSING DETAIL -->
+    <div class="learn-gradient-wrap">
+      <section class="section threats-section" id="safe-browsing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Topic 3: Safe Browsing</p>
+            <h2>Think Before You Click</h2>
+            <p>37.9% of surveyed gamers never read app privacy policies or permissions before installing. Here's what to watch for.</p>
+          </div>
+          <div class="grid cards-3">
+            <article class="card threat-card">
+              <div class="threat-icon">&#127760;</div>
+              <h3>Check URLs carefully</h3>
+              <p>Look for spelling tricks (st3am.com), fake domains, or unusual endings before entering any login details or payment info.</p>
+            </article>
+            <article class="card threat-card">
+              <div class="threat-icon">&#11015;</div>
+              <h3>Only download from official sources</h3>
+              <p>Stick to the Google Play Store, App Store, Steam, and verified publisher sites. Unofficial mods often carry hidden malware.</p>
+            </article>
+            <article class="card threat-card">
+              <div class="threat-icon">&#128226;</div>
+              <h3>Ignore fake urgency</h3>
+              <p>Messages that pressure you to act within minutes are designed to stop you thinking clearly. Real rewards don't expire in 10 minutes.</p>
+            </article>
+            <article class="card threat-card">
+              <div class="threat-icon">&#128274;</div>
+              <h3>Read app permissions</h3>
+              <p>If a game requests access to your contacts, microphone, or location for no clear reason, that's a red flag worth investigating before installing.</p>
+            </article>
+            <article class="card threat-card">
+              <div class="threat-icon">&#128101;</div>
+              <h3>Don't share account details</h3>
+              <p>41.7% of surveyed gamers have shared credentials with friends or family. This creates accountability and recovery problems if something goes wrong.</p>
+            </article>
+            <article class="card threat-card">
+              <div class="threat-icon">&#128260;</div>
+              <h3>Keep apps updated</h3>
+              <p>Security patches fix known vulnerabilities. Delaying updates common among Jamaican mobile gamers per our research leaves known weaknesses open.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIMULATION -->
+      <section class="section threats-section" id="simulation">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Interactive Learning</p>
+            <h2>Phishing Simulation</h2>
+            <p>Read the message below and decide: is this safe to interact with?</p>
+          </div>
+          <div class="card simulation">
+            <article class="fake-email">
+              <p><strong>From:</strong> support@epic-prizes-bonus.net</p>
+              <p><strong>Subject:</strong> Your account won a rare prize!</p>
+              <p>Congratulations gamer. Click the link below within 10 minutes to claim your exclusive reward before your account is locked.</p>
+              <button id="phishing-link" class="btn btn-danger" style="margin-top:1rem">Claim Reward Now</button>
+            </article>
+            <div id="simulation-result" class="alert hidden" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">Game<span>Shield</span>&thinsp;<em>JA</em></a>
+        <p>Cybersecurity awareness built for Jamaican gamers.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 GameShield JA. Learn and stay safe online.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
