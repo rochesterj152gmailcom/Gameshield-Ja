@@ -85,6 +85,15 @@
               <a href="#safe-browsing" class="learn-card-arrow" aria-label="Read more about safe browsing">&#8594;</a>
             </div>
           </article>
+          <article class="learn-info-card learn-card-social">
+            <div class="learn-card-social-bg" aria-hidden="true"></div>
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>Social Engineering &amp; Account Safety</h3>
+              <p>41.7% of surveyed gamers have shared their login credentials. Attackers exploit in-game chat, Discord, and community trust to steal accounts without any hacking at all.</p>
+              <a href="#social-engineering" class="learn-card-arrow" aria-label="Read more about social engineering">&#8594;</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -183,22 +192,58 @@
         </div>
       </section>
 
-      <!-- SIMULATION -->
+    <!-- SOCIAL ENGINEERING DETAIL -->
+    <section class="section action-section" id="social-engineering" style="background:var(--bg)">
+      <div class="container action-grid">
+        <div class="action-text">
+          <p class="section-tag">Topic 4: Social Engineering &amp; Account Safety</p>
+          <h2>Attackers Don't Always Need to Hack You</h2>
+          <p>Our survey found <strong>41.7%</strong> of Jamaican gamers have shared their account credentials with someone — and <strong>25.2%</strong> have had their account hacked. Attackers exploit the trust built inside gaming communities. In-game chats, Discord DMs, and fake "support" messages let them manipulate you into handing over access willingly. This is social engineering: manipulation, not malware.</p>
+          <p style="margin-top:.875rem">Researchers specifically note that Jamaica's youth gaming demographic — predominantly aged 18–24 — exhibit notable deficiencies in recognizing these trust-based attacks.</p>
+        </div>
+        <div class="action-cards">
+          <div class="small-feature-card sfc-warning">
+            <h3>&#9888; Fake "game support" in DMs</h3>
+            <p>Legitimate platforms will never ask for your password through in-game chat, Discord, or WhatsApp. Any "support agent" who does is an attacker.</p>
+          </div>
+          <div class="small-feature-card sfc-warning">
+            <h3>&#9888; Never share credentials — even with friends</h3>
+            <p>Account sharing creates security and recovery problems. If the friendship changes or their device is compromised, your account is at risk too.</p>
+          </div>
+          <div class="small-feature-card">
+            <h3>Use a password manager</h3>
+            <p>Our research explicitly recommends adopting a password manager (e.g. Bitwarden, Google Password Manager). One breach stops there instead of cascading across every account you own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
       <section class="section threats-section" id="simulation">
         <div class="container">
           <div class="section-heading">
             <p class="section-tag">Interactive Learning</p>
-            <h2>Phishing Simulation</h2>
-            <p>Read the message below and decide: is this safe to interact with?</p>
+            <h2>Phishing Simulations</h2>
+            <p>Read each message and decide: is it safe to interact with? Our research recommends culturally grounded scenarios — so we have one for the Jamaican gaming context.</p>
           </div>
-          <div class="card simulation">
-            <article class="fake-email">
-              <p><strong>From:</strong> support@epic-prizes-bonus.net</p>
-              <p><strong>Subject:</strong> Your account won a rare prize!</p>
-              <p>Congratulations gamer. Click the link below within 10 minutes to claim your exclusive reward before your account is locked.</p>
-              <button id="phishing-link" class="btn btn-danger" style="margin-top:1rem">Claim Reward Now</button>
-            </article>
-            <div id="simulation-result" class="alert hidden" aria-live="polite"></div>
+          <div style="display:grid; gap:1.5rem; max-width:700px; margin:0 auto">
+            <div class="card simulation">
+              <p class="section-tag" style="margin-bottom:.75rem">Scenario 1 — Classic Phishing</p>
+              <article class="fake-email">
+                <p><strong>From:</strong> support@epic-prizes-bonus.net</p>
+                <p><strong>Subject:</strong> Your account won a rare prize!</p>
+                <p>Congratulations gamer. Click the link below within 10 minutes to claim your exclusive reward before your account is locked.</p>
+                <button id="phishing-link" class="btn btn-danger" style="margin-top:1rem">Claim Reward Now</button>
+              </article>
+              <div id="simulation-result" class="alert hidden" aria-live="polite"></div>
+            </div>
+            <div class="card simulation">
+              <p class="section-tag" style="margin-bottom:.75rem">Scenario 2 — Jamaican Gaming Context</p>
+              <article class="fake-email">
+                <p><strong>From:</strong> PlayStation_Support_JA (Discord DM)</p>
+                <p><strong>Message:</strong> "Yow! Congrats yute — yuh account select fi win 5000 PSN points! Jus send mi yuh login quick before di offer expire. Nuh tell nobody else, dis offer strictly fi you 🔥"</p>
+                <button id="phishing-link-2" class="btn btn-danger" style="margin-top:1rem">Reply with Login</button>
+              </article>
+              <div id="simulation-result-2" class="alert hidden" aria-live="polite"></div>
+            </div>
           </div>
         </div>
       </section>
